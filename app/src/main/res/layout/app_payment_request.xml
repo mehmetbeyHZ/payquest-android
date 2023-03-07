@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/level_background"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_marginTop="85dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Rütbe Talep Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingVertical="15dp"
+        android:elevation="2px"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/custom_box"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="15dp"
+            android:id="@+id/register_name"
+            android:textSize="12sp"
+            android:drawableStart="@drawable/ic_person_blue"
+            android:drawablePadding="10dp"
+            android:hint="@string/name_surname"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            android:enabled="false"
+            android:autofillHints="" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/bankSpinnerArea"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:spinnerMode="dialog"
+                android:id="@+id/bankSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:padding="15dp"
+            android:id="@+id/iban"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:hint="IBAN"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:padding="15dp"
+            android:id="@+id/quantity"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:hint="Çekilecek tutar"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/newPaymentRequest"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="#433efe"
+            android:layout_marginHorizontal="15dp"
+            android:text="Para Çekme Talebi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:elevation="1px"
+            android:padding="8dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/custom_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:text="Ödeme talebiniz gerekli minimum para çekme limiti sağlanıp  görev kontrolleriniz yapıldıktan sonra banka hesabınıza 1-20 iş günü içerisinde gerçekleştirilecektir."
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:src="@drawable/visa"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/mastercard"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

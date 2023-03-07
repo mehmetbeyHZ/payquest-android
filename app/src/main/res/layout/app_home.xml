@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshHome"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:background="@drawable/level_background"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userAvatar"
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_marginTop="-15dp"
+                        app:civ_border_color="#4CAF50"
+                        app:civ_border_width="5dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/image_bg"
+                        />
+                    <TextView
+                        android:id="@+id/levelText"
+                        android:padding="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="0"
+                        android:layout_marginTop="-23dp"
+                        android:layout_marginLeft="29dp"
+                        android:background="@drawable/full_radius"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/authName"
+                            android:textColor="@color/colorWhite"
+                            android:text="..."
+                            android:layout_marginBottom="2dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/is_verified_profile"
+                            android:tint="@color/colorWhite"
+                            android:layout_gravity="center"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_correct"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/authEmail"
+                        android:textColor="#ABF7F7F7"
+                        android:text="................"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-65dp"
+                    android:background="#FFF"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:elevation="10dp"
+                    android:paddingBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:padding="12dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:text="Bakiyeniz"
+                            android:textSize="12sp"
+                            android:textColor="#7b7e82"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/authBalance"
+                            android:layout_width="wrap_content"
+                            android:text="0.0 ₺"
+                            android:textSize="15sp"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="#dbdbdb"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px" />
+
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/missionsPage"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_clipboard"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="@string/my_missions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/allMissionsList"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_paper"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="@string/all_missions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/activityGoProfile"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_activity"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="@string/activity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/goPaymentRequest"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_pay"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="@string/payment_request"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/paymentRequests"
+                            android:clickable="true"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:focusable="true">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_wallet"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="@string/payment_request_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/support"
+                            android:clickable="true"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/headphone"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Destek Talebi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <com.google.android.gms.ads.AdView
+                    android:layout_marginTop="-25dp"
+                    android:layout_gravity="center"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-6931530475516594/8751737426">
+                </com.google.android.gms.ads.AdView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/informationRecycler"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="15dp"
+                    android:minHeight="300dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

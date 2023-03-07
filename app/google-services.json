@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "859798969470",
+    "firebase_url": "https://payquestion-payquest.firebaseio.com",
+    "project_id": "payquestion-payquest",
+    "storage_bucket": "payquestion-payquest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859798969470:android:e514fb11cb20f460d58c2f",
+        "android_client_info": {
+          "package_name": "com.payquestion.payquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859798969470-04nr5espusvbrueim5c9h75ihicogufe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaq27lzQX0nDtPNtSKiHdFGVHTWynZrRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859798969470-04nr5espusvbrueim5c9h75ihicogufe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

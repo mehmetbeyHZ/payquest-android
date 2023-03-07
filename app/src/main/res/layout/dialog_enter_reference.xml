@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textSize="10sp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/errorTitle"
+            android:text="Size verilmiş olan referans kodunu giriniz."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/refCode"
+            android:drawableLeft="@drawable/ic_baseline_code_22"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:hint="Referans kodu"
+            android:background="@drawable/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmCode"
+        android:clickable="true"
+        android:text="ONAYLA"
+        android:elevation="0dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:background="#ffff"
+        android:textSize="12sp"
+        android:backgroundTint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:focusable="true" />
+
+</LinearLayout>

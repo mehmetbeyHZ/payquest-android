@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:minWidth="200dp"
+    android:gravity="center"
+    android:background="#f7f7f7"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/close"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:id="@+id/errorTitle"
+            android:textAlignment="center"
+            android:text="Hatalı Cevap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okDialog"
+        android:clickable="true"
+        android:text="TAMAM"
+        android:elevation="0dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:background="#ffff"
+        android:textSize="12sp"
+        android:backgroundTint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:focusable="true" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">PayQuest</string>
+    <string name="name_surname">Adınız Soyadınız</string>
+    <string name="surname">Soyadınız</string>
+    <string name="name">Adınız</string>
+    <string name="your_email">Email adresiniz</string>
+    <string name="your_phone">Telefon numaranız</string>
+    <string name="password">Şifre</string>
+    <string name="re_password">Tekrar Şifreniz</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="get_help">Yardım Al</string>
+    <string name="auth_help_desc">Giriş detaylarını unuttun mu?</string>
+    <string name="already_have_account">Zaten bir hesabın var mı?</string>
+    <string name="send_reset_code">Şifremi Unuttum</string>
+    <string name="request_error">Üzgünüz, bir sorun oluştu.</string>
+    <string name="empty_area">Boş alan bıraktınız.</string>
+
+    <string name="do_login">Giriş Yap</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="answer_question">Soruyu Cevapla</string>
+    <string name="answer_question_desc">Size soracağımız soruyu cevaplayın ve ödülünüzü alın!</string>
+    <string name="private_mission">Özel Görev Zamanı</string>
+    <string name="private_mission_desc">Size verilen görevi yerine getirin ve büyüleyici ödülünüzü kapın!</string>
+
+    <string name="mission_completed_title">Görev Tamamlandı!</string>
+    <string name="mission_completed_desc">Bu görevi başarıyla tamamladınız. Daha fazla ödüle erişmek için görevleri yapmaya devam et!</string>
+
+    <string name="mission_complete_failed_title">Görev Tamamlanamadı!</string>
+    <string name="mission_complete_failed_desc">Bu görevi tamamlayamadınız. Daha fazla ödüle erişmek için görevleri yapmaya devam et!</string>
+
+
+    <string name="mission_checking">Görevi Kontrol Ediyoruz</string>
+    <string name="mission_checking_desc">Görevinızi kontrol edeceğiz. Tamamlama durumunuza göre görev durumu değiştirilecektir.</string>
+
+    <string name="mission_cancel">Görev İptal!</string>
+    <string name="mission_cancel_desc">Görev durumu iptal edildi. Başka görevler bularak devam edin!</string>
+    <string name="title_activity_general">MainActivity</string>
+
+    <string name="notification_times_end_title">Süreniz Doldu!</string>
+    <string name="notification_times_end_desc">Artık yeni görevler alabilirsiniz.</string>
+
+    <string name="play_error">Geçmiş oyunları tekrar oynayamazsınız.</string>
+    <string name="double_logout">Çıkmak için tekrar dokunun</string>
+
+    <string name="my_missions">Görevlerim</string>
+    <string name="all_missions">Görev Geçmişi</string>
+    <string name="activity">Hareketlerim</string>
+    <string name="payment_request">Ödeme Talebi</string>
+
+    <string name="take_new_missions">Yeni Soru Al</string>
+    <string name="timestamp_faker">00:00:00</string>
+    <string name="no_any_mission">Hiç Göreviniz Yok!</string>
+    <string name="no_mission_desc">Cevaplayabileceğiniz hiç soru yok! hemen yeni soru alarak başlayın.</string>
+
+    <string name="no_payment_request">Hiç ödeme talebiniz yok.</string>
+    <string name="no_payment_request_desc">Tamamlayabileceğiniz hiç göreviniz yok! hemen yeni görev alarak başlayın.</string>
+
+    <string name="payment_request_all">Ödeme taleplerim</string>
+    <!--    Profile page-->
+
+    <string name="current_balance">Mevcut Bakiye</string>
+    <string name="statistics">Istatistikler</string>
+
+    <string name="code_copied">Panoya kopyalandı</string>
+
+    <string name="password_not_matches">Şifreler eşleşmedi.</string>
+
+    <string name="game_check_error">Bu soruya şuan ulaşılamıyor. daha sonra lütfen tekrar deneyin.</string>
+    <string name="question">Soru</string>
+
+    <string name="male">Erkek</string>
+    <string name="female">Kadın</string>
+    <string name="please_select_gender">Lütfen cinsiyet seçin.</string>
+
+    <string name="question_looking">Verdiğin cevabın doğruluğunu inceliyoruz</string>
+    <string name="open_app">Uygulamayı aç</string>
+    <string name="i_completed">Bu görevi Tamamladım</string>
+
+    <string name="no_tickets_title">Hiç Destek Talebiniz Yok</string>
+    <string name="no_tickets_description">Herhangi bir sorununuz var ise yukarıdan destek bildirimi oluşturabilirsiniz.</string>
+    <string name="support_title">Destek Talebi Başlığı</string>
+    <string name="support_message">Mesaj…</string>
+    <string name="new_ticket">Yeni Destek Talebi Oluştur</string>
+    <string name="no_messages">Hiç Mesaj Yok!</string>
+    <string name="send">Gönder</string>
+    <string name="update_app">Bu görevi yapabilmek için uygulamayı güncellemeniz gerekmektedir.</string>
+
+    <string name="permission_denied">İzin verilmedi.</string>
+    <string name="reference_code">Varsa referans kodunuz (isteğe bağlı)</string>
+</resources>

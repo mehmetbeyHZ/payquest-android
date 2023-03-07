@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:background="@drawable/level_background"
+                    >
+
+                    <LinearLayout
+                        android:paddingLeft="30dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_marginTop="100dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="25sp"
+                            android:fontFamily="sans-serif-thin"
+                            android:text="@string/current_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/currentBalance"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="30sp"
+                            android:text="0.0 ₺"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/userProfileAvatar"
+                            android:layout_width="80dp"
+                            android:background="@drawable/image_bg"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="100dp"
+                            app:civ_border_color="#4CAF50"
+                            app:civ_border_width="5dp"
+                            android:layout_height="80dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-55dp"
+                    android:background="#FFF"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:elevation="10dp"
+                    android:paddingBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:padding="12dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:text="@string/statistics"
+                            android:textSize="12sp"
+                            android:textColor="#7b7e82"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:paddingHorizontal="10dp"
+                            android:background="@drawable/level_background"
+                            android:id="@+id/authLevel"
+                            android:layout_width="wrap_content"
+                            android:text="0 Level"
+                            android:textSize="12sp"
+                            android:textColor="#fff"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_diamond"
+                                android:textColor="#fff" />
+                            <TextView
+                                android:id="@+id/authDiamond"
+                                android:layout_marginLeft="1dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:layout_marginTop="-1dp"
+                                android:layout_width="wrap_content"
+                                android:text="0"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="#dbdbdb"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px" />
+
+
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/loadingStatistic"
+                        android:layout_margin="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/statisticRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+                </LinearLayout>
+                <Button
+                    android:layout_marginTop="-55dp"
+                    android:id="@+id/checkStatistic"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="10sp"
+                    android:text="İstatistikleri Güncelle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <com.google.android.gms.ads.AdView
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-6931530475516594/8751737426">
+                </com.google.android.gms.ads.AdView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="#FFF"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:elevation="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/enterRefCode"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_finger"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Referans Kodu Gir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/myReferences"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_businessman"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Referanslarım"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/openMyRefCode"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:tint="@color/colorDarkBlue"
+                                android:background="@drawable/full_radius_first"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:src="@drawable/ic_fingerprint"
+                                />
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Referans Kodum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/editProfile"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="10sp"
+                    android:text="Profili Düzenle"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

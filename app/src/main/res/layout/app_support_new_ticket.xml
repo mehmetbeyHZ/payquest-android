@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/threadTitle"
+                android:hint="@string/support_title"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:background="@drawable/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/threadMessage"
+                android:layout_marginTop="10dp"
+                android:hint="@string/support_message"
+                android:textSize="12sp"
+                android:padding="15dp"
+                android:inputType="text|textMultiLine"
+                android:background="@drawable/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/createNewThread"
+                android:drawablePadding="-22dp"
+                android:layout_width="match_parent"
+                android:backgroundTint="#433efe"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:text="@string/send"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/informationRecycler"
+                android:layout_marginTop="15dp"
+                android:minHeight="300dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
